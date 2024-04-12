@@ -1,0 +1,111 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  6 06:50:06 2024
+| Host         : DESKTOP-54L5IRB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file click_display_control_sets_placed.rpt
+| Design       : click_display
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            4 |
+|     10 |            5 |
+|     12 |            1 |
+|     14 |            3 |
+|    16+ |           30 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1674 |          356 |
+| No           | No                    | Yes                    |              68 |           17 |
+| No           | Yes                   | No                     |             744 |          134 |
+| Yes          | No                    | No                     |            1142 |          271 |
+| Yes          | No                    | Yes                    |              20 |            5 |
+| Yes          | Yes                   | No                     |             360 |           69 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|            Clock Signal            |                         Enable Signal                        |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                     | main/counter_black[5]_i_2_n_0                                | main/counter_black[5]_i_1_n_0                                |                2 |              8 |
+|  clk_IBUF_BUFG                     |                                                              | ca/unit_mouse/Inst_Ps2Interface/data_inter0                  |                1 |              8 |
+|  clk_IBUF_BUFG                     |                                                              | ca/unit_mouse/Inst_Ps2Interface/clk_inter0                   |                1 |              8 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/shift_frame                  | ca/unit_mouse/Inst_Ps2Interface/reset_bit_count              |                2 |              8 |
+|  main/clk_divider_0p5/clk_0p5      |                                                              | main/step_number[4]_i_1_n_0                                  |                1 |             10 |
+|  main/clk_divider_0p5/clk_0p5      | main/counter_0p5Hz0                                          |                                                              |                2 |             10 |
+|  clk_IBUF_BUFG                     | ca/step_count[4]_i_1_n_0                                     |                                                              |                2 |             10 |
+|  clk_IBUF_BUFG                     | ca/debounce_counter[4]_i_2_n_0                               | ca/unit_mouse/SR[0]                                          |                1 |             10 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/left_down_reg                |                                                              |                1 |             10 |
+|  clk_IBUF_BUFG                     | main/counter_white[5]_i_2_n_0                                | main/counter_white[5]_i_1_n_0                                |                2 |             12 |
+|  pclk/cdr/data_reg[7]_i_1_n_0      |                                                              |                                                              |                2 |             14 |
+|  pclk2/cdr2/data_reg[7]_i_1__0_n_0 |                                                              |                                                              |                2 |             14 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |             14 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/write_data                                     |                                                              |                3 |             16 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/y_inc_reg[0]                 |                                                              |                2 |             16 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/x_inc_reg[0]                 |                                                              |                2 |             16 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/load_rx_data                 |                                                              |                1 |             16 |
+|  vga/rgb_reg                       |                                                              | reset_IBUF                                                   |                5 |             20 |
+|  vga/rgb_reg                       | vga/v_count_next                                             | reset_IBUF                                                   |                5 |             20 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                              |                2 |             20 |
+|  clk_IBUF_BUFG                     | vga/E[0]                                                     |                                                              |                8 |             22 |
+|  clk_IBUF_BUFG                     | vga/row_addr2_reg[3]_1[0]                                    |                                                              |                6 |             22 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             22 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/y_new_reg_n_0                                  |                                                              |                5 |             24 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/x_new_reg_n_0                                  |                                                              |                4 |             24 |
+|  clk_IBUF_BUFG                     | vga/rgb_reg                                                  |                                                              |                5 |             24 |
+|  clk_IBUF_BUFG                     | ca/unit_mouse/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/clear                        |                4 |             28 |
+|  clk_IBUF_BUFG                     | main/position_white[14][14]_i_1__0_n_0                       | main/position_white[13][14]_i_1__0_n_0                       |               13 |             34 |
+|  clk_IBUF_BUFG                     | main/position_black[14][14]_i_1__0_n_0                       | main/position_black[13][14]_i_1__0_n_0                       |               17 |             34 |
+|  clk_IBUF_BUFG                     |                                                              | vga/cursor_y_reg[9]                                          |               12 |             40 |
+|  clk_IBUF_BUFG                     |                                                              | reset_IBUF                                                   |               12 |             48 |
+|  clk_IBUF_BUFG                     |                                                              | ca/unit_mouse/reset_timeout_cnt_reg_n_0                      |                5 |             48 |
+|  clk_IBUF_BUFG                     |                                                              | ca/unit_mouse/reset_periodic_check_cnt__0                    |                5 |             52 |
+|  clk_IBUF_BUFG                     | main/counter_1s_reg[1]_0                                     | main/counter_1s[31]_i_1_n_0                                  |                8 |             62 |
+|  clk_IBUF_BUFG                     | main/counter_1p5s0                                           | main/counter_1p5s[31]_i_1_n_0                                |                7 |             64 |
+|  clk_IBUF_BUFG                     |                                                              | main/clk_divider_0p5/clear                                   |                8 |             64 |
+|  clk_IBUF_BUFG                     |                                                              | dt/clock_0d67hz/clear                                        |                8 |             64 |
+|  clk_IBUF_BUFG                     | main/success_counter[31]_i_2_n_0                             | main/success_counter[31]_i_1_n_0                             |                8 |             64 |
+|  clk_IBUF_BUFG                     | main/counter_1s_reg[1]_0                                     |                                                              |               16 |             80 |
+|  clk_IBUF_BUFG                     | main/position_black[14][14]_i_1__0_n_0                       |                                                              |              105 |            416 |
+|  clk_IBUF_BUFG                     | main/position_white[14][14]_i_1__0_n_0                       |                                                              |              107 |            416 |
+|  clk_IBUF_BUFG                     |                                                              | main/success_counter[31]_i_1_n_0                             |               93 |            450 |
+|  clk_IBUF_BUFG                     |                                                              |                                                              |              352 |           1646 |
++------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+
+

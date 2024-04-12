@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86131/Downloads/EE2026/MODS/MODS.srcs/sources_1/imports/Desktop/Mouse_Control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MouseCtl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86131/Downloads/EE2026/integrated_project/integrated_project.srcs/sources_1/imports/Ps2Interface.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Ps2Interface

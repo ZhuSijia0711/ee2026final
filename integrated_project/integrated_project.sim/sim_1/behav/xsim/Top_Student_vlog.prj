@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../integrated_project.srcs/sources_1/new/ascii_rom.v" \
+"../../../../integrated_project.srcs/sources_1/new/ascii_test.v" \
+"../../../../integrated_project.srcs/sources_1/new/board_animation.v" \
+"../../../../integrated_project.srcs/sources_1/new/chess_animation.v" \
+"../../../../integrated_project.srcs/sources_1/new/cursor_animation.v" \
+"../../../../integrated_project.srcs/sources_1/new/vga_sync.v" \
+"../../../../integrated_project.srcs/sources_1/new/Top_Student.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
