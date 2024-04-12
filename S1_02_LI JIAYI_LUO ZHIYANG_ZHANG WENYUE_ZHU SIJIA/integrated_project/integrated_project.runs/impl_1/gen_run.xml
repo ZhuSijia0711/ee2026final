@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1712430466">
+  <File Type="ROUTE-PWR" Name="click_display_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="click_display.tcl"/>
+  <File Type="BITSTR-BMM" Name="click_display_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="click_display_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="click_display_reports.tcl"/>
+  <File Type="OPT-DCP" Name="click_display_opt.dcp"/>
+  <File Type="OPT-DRC" Name="click_display_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="click_display.hwdef"/>
+  <File Type="PWROPT-DCP" Name="click_display_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="click_display_placed.dcp"/>
+  <File Type="PLACE-IO" Name="click_display_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="click_display_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="click_display_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="click_display_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="click_display_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="click_display.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="click_display_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="click_display.bin"/>
+  <File Type="PHYSOPT-DCP" Name="click_display_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="click_display.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="click_display_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="click_display_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="click_display_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="click_display_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="click_display_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="click_display_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="click_display.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="click_display_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="click_display.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="click_display_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="click_display_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="click_display.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="click_display_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="click_display_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="click_display_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="click_display_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="click_display_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="click_display_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="click_display_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="click_display_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="click_display_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="click_display_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="click_display_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="click_display_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="click_display.bit"/>
+  <File Type="BITSTR-RBT" Name="click_display.rbt"/>
+  <File Type="BITSTR-NKY" Name="click_display.nky"/>
+  <File Type="BG-DRC" Name="click_display.drc"/>
+  <File Type="RDI-RDI" Name="click_display.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Flexible_clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/Flexible_clock.v"/>
+        <Attr Name="ImportTime" Val="1712193117"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ascii_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/ascii_rom.v"/>
+        <Attr Name="ImportTime" Val="1711190788"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ascii_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/ascii_test.v"/>
+        <Attr Name="ImportTime" Val="1711191324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/black_win_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/black_win_animation.v"/>
+        <Attr Name="ImportTime" Val="1712120684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/board_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/board_animation.v"/>
+        <Attr Name="ImportTime" Val="1712201244"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_digit_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/clock_digit_rom.v"/>
+        <Attr Name="ImportTime" Val="1712287999"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/control_animation.v"/>
+        <Attr Name="ImportTime" Val="1712349869"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cursor_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/cursor_animation.v"/>
+        <Attr Name="ImportTime" Val="1712356759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/draw_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/draw_animation.v"/>
+        <Attr Name="ImportTime" Val="1712280372"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/game_logic.v"/>
+        <Attr Name="ImportTime" Val="1712357216"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixel_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/pixel_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1712341988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixel_clk_gen2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/pixel_clk_gen2.v"/>
+        <Attr Name="ImportTime" Val="1712342007"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/player_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/player_animation.v"/>
+        <Attr Name="ImportTime" Val="1712121430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/replay_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../integrated_project.srcs/sources_1/new/replay_control.v"/>
+        <Attr Name="ImportTime" Val="1712430454"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/replay_control_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../integrated_project.srcs/sources_1/new/replay_control_animation.v"/>
+        <Attr Name="ImportTime" Val="1712411783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/start_game.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/start_game.v"/>
+        <Attr Name="ImportTime" Val="1712287506"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/vga_sync.v"/>
+        <Attr Name="ImportTime" Val="1711017182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/white_win_animation.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/white_win_animation.v"/>
+        <Attr Name="ImportTime" Val="1712110068"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Mouse_Control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../MODS/MODS.srcs/sources_1/imports/Desktop/Mouse_Control.vhd"/>
+        <Attr Name="ImportTime" Val="1709477212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Ps2Interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/imports/Ps2Interface.vhd"/>
+        <Attr Name="ImportTime" Val="1709477212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/click_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../integrated_project.srcs/sources_1/new/click_display.v"/>
+        <Attr Name="ImportTime" Val="1712355234"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/integrated_project/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1712357684"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="click_display"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/EE2026/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1712349160"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

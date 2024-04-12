@@ -1,0 +1,335 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr  7 03:11:38 2024
+| Host         : DESKTOP-54L5IRB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file click_display_control_sets_placed.rpt
+| Design       : click_display
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   267 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            4 |
+|     10 |            2 |
+|     12 |            1 |
+|     14 |            3 |
+|    16+ |          257 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1714 |          542 |
+| No           | No                    | Yes                    |              68 |           25 |
+| No           | Yes                   | No                     |            1634 |          379 |
+| Yes          | No                    | No                     |             338 |           59 |
+| Yes          | No                    | Yes                    |              20 |            5 |
+| Yes          | Yes                   | No                     |            4872 |          869 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|                Clock Signal                |                         Enable Signal                        |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++--------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/shift_frame                  | ca/unit_mouse/Inst_Ps2Interface/reset_bit_count              |                2 |              8 |
+|  clk_IBUF_BUFG                             | main/counter_black[5]_i_2_n_0                                | main/counter_black[5]_i_1_n_0                                |                2 |              8 |
+|  clk_IBUF_BUFG                             |                                                              | ca/unit_mouse/Inst_Ps2Interface/clk_inter0                   |                1 |              8 |
+|  clk_IBUF_BUFG                             |                                                              | ca/unit_mouse/Inst_Ps2Interface/data_inter0                  |                1 |              8 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/left_down_reg                |                                                              |                1 |             10 |
+|  clk_IBUF_BUFG                             | ca/debounce_counter0                                         | ca/unit_mouse/SR[0]                                          |                2 |             10 |
+|  clk_IBUF_BUFG                             | main/sel                                                     | main/counter_white[5]_i_1_n_0                                |                2 |             12 |
+|  pclk/cdr/data_reg[7]_i_1_n_0              |                                                              |                                                              |                2 |             14 |
+|  pclk2/cdr2/data_reg[7]_i_1__0_n_0         |                                                              |                                                              |                3 |             14 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                3 |             14 |
+|  clk_IBUF_BUFG                             | main/record[90][7]_i_2_n_0                                   | main/record[90][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[80][7]_i_2_n_0                                   | main/record[80][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[72][7]_i_2_n_0                                   | main/record[72][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[86][7]_i_2_n_0                                   | main/record[86][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[94][7]_i_2_n_0                                   | main/record[94][7]_i_1_n_0                                   |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[70][7]_i_2_n_0                                   | main/record[70][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[73][7]_i_2_n_0                                   | main/record[73][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[78][7]_i_2_n_0                                   | main/record[78][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[71][7]_i_2_n_0                                   | main/record[71][7]_i_1_n_0                                   |                1 |             16 |
+|  clk_IBUF_BUFG                             | main/record[82][7]_i_2_n_0                                   | main/record[82][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[83][7]_i_2_n_0                                   | main/record[83][7]_i_1_n_0                                   |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[85][7]_i_2_n_0                                   | main/record[85][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[6][7]_i_2_n_0                                    | main/record[6][7]_i_1_n_0                                    |                2 |             16 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/load_rx_data                 |                                                              |                2 |             16 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/x_inc_reg[0]                 |                                                              |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[88][7]_i_2_n_0                                   | main/record[88][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/y_inc_reg[0]                 |                                                              |                3 |             16 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/write_data                                     |                                                              |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[74][7]_i_2_n_0                                   | main/record[74][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[89][7]_i_2_n_0                                   | main/record[89][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[87][7]_i_2_n_0                                   | main/record[87][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[98][7]_i_2_n_0                                   | main/record[98][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/E[0]                                                    |                                                              |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[9][7]_i_2_n_0                                    | main/record[9][7]_i_1_n_0                                    |                2 |             16 |
+|  main/clk_divider_0p5/counter_0p5Hz_reg[0] | main/step_to_replay_reg[7]_i_2_n_0                           | main/step_to_replay[7]_i_1_n_0                               |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[95][7]_i_2_n_0                                   | main/record[95][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[96][7]_i_2_n_0                                   | main/record[96][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[99][7]_i_2_n_0                                   | main/record[99][7]_i_1_n_0                                   |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[97][7]_i_2_n_0                                   | main/record[97][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[102][7]_i_2_n_0                                  | main/record[102][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[103][7]_i_2_n_0                                  | main/record[103][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[105][7]_i_2_n_0                                  | main/record[105][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[106][7]_i_2_n_0                                  | main/record[106][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[107][7]_i_2_n_0                                  | main/record[107][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[100][7]_i_2_n_0                                  | main/record[100][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[101][7]_i_2_n_0                                  | main/record[101][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[104][7]_i_2_n_0                                  | main/record[104][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[0][7]_i_2_n_0                                    | main/record[0][7]_i_1_n_0                                    |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[116][7]_i_2_n_0                                  | main/record[116][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[110][7]_i_2_n_0                                  | main/record[110][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[114][7]_i_2_n_0                                  | main/record[114][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[109][7]_i_2_n_0                                  | main/record[109][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[108][7]_i_2_n_0                                  | main/record[108][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[10][7]_i_2_n_0                                   | main/record[10][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[115][7]_i_2_n_0                                  | main/record[115][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[111][7]_i_2_n_0                                  | main/record[111][7]_i_1_n_0                                  |                6 |             16 |
+|  clk_IBUF_BUFG                             | main/record[113][7]_i_2_n_0                                  | main/record[113][7]_i_1_n_0                                  |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[112][7]_i_2_n_0                                  | main/record[112][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[122][7]_i_2_n_0                                  | main/record[122][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[118][7]_i_2_n_0                                  | main/record[118][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[120][7]_i_2_n_0                                  | main/record[120][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[117][7]_i_2_n_0                                  | main/record[117][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[119][7]_i_2_n_0                                  | main/record[119][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[11][7]_i_2_n_0                                   | main/record[11][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[121][7]_i_2_n_0                                  | main/record[121][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[126][7]_i_2_n_0                                  | main/record[126][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[127][7]_i_2_n_0                                  | main/record[127][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[123][7]_i_2_n_0                                  | main/record[123][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[124][7]_i_2_n_0                                  | main/record[124][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[125][7]_i_2_n_0                                  | main/record[125][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[147][7]_i_2_n_0                                  | main/record[147][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[138][7]_i_2_n_0                                  | main/record[138][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[145][7]_i_2_n_0                                  | main/record[145][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[141][7]_i_2_n_0                                  | main/record[141][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[148][7]_i_2_n_0                                  | main/record[148][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[149][7]_i_2_n_0                                  | main/record[149][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[13][7]_i_2_n_0                                   | main/record[13][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[129][7]_i_2_n_0                                  | main/record[129][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[128][7]_i_2_n_0                                  | main/record[128][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[140][7]_i_2_n_0                                  | main/record[140][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[142][7]_i_2_n_0                                  | main/record[142][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[133][7]_i_2_n_0                                  | main/record[133][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[143][7]_i_2_n_0                                  | main/record[143][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[136][7]_i_2_n_0                                  | main/record[136][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[130][7]_i_2_n_0                                  | main/record[130][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[132][7]_i_2_n_0                                  | main/record[132][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[144][7]_i_2_n_0                                  | main/record[144][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[131][7]_i_2_n_0                                  | main/record[131][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[139][7]_i_2_n_0                                  | main/record[139][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[12][7]_i_2_n_0                                   | main/record[12][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[137][7]_i_2_n_0                                  | main/record[137][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[146][7]_i_2_n_0                                  | main/record[146][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[135][7]_i_2_n_0                                  | main/record[135][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[134][7]_i_2_n_0                                  | main/record[134][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[152][7]_i_2_n_0                                  | main/record[152][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[157][7]_i_2_n_0                                  | main/record[157][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[156][7]_i_2_n_0                                  | main/record[156][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[153][7]_i_2_n_0                                  | main/record[153][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[159][7]_i_2_n_0                                  | main/record[159][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[160][7]_i_2_n_0                                  | main/record[160][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[150][7]_i_2_n_0                                  | main/record[150][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[161][7]_i_2_n_0                                  | main/record[161][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[162][7]_i_2_n_0                                  | main/record[162][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[154][7]_i_2_n_0                                  | main/record[154][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[15][7]_i_2_n_0                                   | main/record[15][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[14][7]_i_2_n_0                                   | main/record[14][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[155][7]_i_2_n_0                                  | main/record[155][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[158][7]_i_2_n_0                                  | main/record[158][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[151][7]_i_2_n_0                                  | main/record[151][7]_i_1_n_0                                  |                6 |             16 |
+|  clk_IBUF_BUFG                             | main/record[164][7]_i_2_n_0                                  | main/record[164][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[163][7]_i_2_n_0                                  | main/record[163][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[167][7]_i_2_n_0                                  | main/record[167][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[166][7]_i_2_n_0                                  | main/record[166][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[168][7]_i_2_n_0                                  | main/record[168][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[165][7]_i_2_n_0                                  | main/record[165][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[173][7]_i_2_n_0                                  | main/record[173][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[171][7]_i_2_n_0                                  | main/record[171][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[170][7]_i_2_n_0                                  | main/record[170][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[16][7]_i_2_n_0                                   | main/record[16][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[169][7]_i_2_n_0                                  | main/record[169][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[172][7]_i_2_n_0                                  | main/record[172][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[178][7]_i_2_n_0                                  | main/record[178][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[179][7]_i_2_n_0                                  | main/record[179][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[174][7]_i_2_n_0                                  | main/record[174][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[176][7]_i_2_n_0                                  | main/record[176][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[177][7]_i_2_n_0                                  | main/record[177][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[175][7]_i_2_n_0                                  | main/record[175][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[184][7]_i_2_n_0                                  | main/record[184][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[183][7]_i_2_n_0                                  | main/record[183][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[181][7]_i_2_n_0                                  | main/record[181][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[182][7]_i_2_n_0                                  | main/record[182][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[17][7]_i_2_n_0                                   | main/record[17][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[180][7]_i_2_n_0                                  | main/record[180][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[188][7]_i_2_n_0                                  | main/record[188][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[185][7]_i_2_n_0                                  | main/record[185][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[187][7]_i_2_n_0                                  | main/record[187][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[186][7]_i_2_n_0                                  | main/record[186][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[189][7]_i_2_n_0                                  | main/record[189][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[18][7]_i_2_n_0                                   | main/record[18][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[191][7]_i_2_n_0                                  | main/record[191][7]_i_1_n_0                                  |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[193][7]_i_2_n_0                                  | main/record[193][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[192][7]_i_2_n_0                                  | main/record[192][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[195][7]_i_2_n_0                                  | main/record[195][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[194][7]_i_2_n_0                                  | main/record[194][7]_i_1_n_0                                  |                1 |             16 |
+|  clk_IBUF_BUFG                             | main/record[190][7]_i_2_n_0                                  | main/record[190][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[198][7]_i_2_n_0                                  | main/record[198][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[19][7]_i_2_n_0                                   | main/record[19][7]_i_1_n_0                                   |                1 |             16 |
+|  clk_IBUF_BUFG                             | main/record[1][7]_i_2_n_0                                    | main/record[1][7]_i_1_n_0                                    |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[196][7]_i_2_n_0                                  | main/record[196][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[201][7]_i_2_n_0                                  | main/record[201][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[200][7]_i_2_n_0                                  | main/record[200][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[199][7]_i_2_n_0                                  | main/record[199][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[197][7]_i_2_n_0                                  | main/record[197][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[206][7]_i_2_n_0                                  | main/record[206][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[207][7]_i_2_n_0                                  | main/record[207][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[203][7]_i_2_n_0                                  | main/record[203][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[204][7]_i_2_n_0                                  | main/record[204][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[202][7]_i_2_n_0                                  | main/record[202][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[205][7]_i_2_n_0                                  | main/record[205][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[211][7]_i_2_n_0                                  | main/record[211][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[209][7]_i_2_n_0                                  | main/record[209][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[20][7]_i_2_n_0                                   | main/record[20][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[208][7]_i_2_n_0                                  | main/record[208][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[212][7]_i_2_n_0                                  | main/record[212][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[210][7]_i_2_n_0                                  | main/record[210][7]_i_1_n_0                                  |                1 |             16 |
+|  clk_IBUF_BUFG                             | main/record[216][7]_i_2_n_0                                  | main/record[216][7]_i_1_n_0                                  |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[217][7]_i_2_n_0                                  | main/record[217][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[215][7]_i_2_n_0                                  | main/record[215][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[213][7]_i_2_n_0                                  | main/record[213][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[214][7]_i_2_n_0                                  | main/record[214][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[221][7]_i_2_n_0                                  | main/record[221][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[219][7]_i_2_n_0                                  | main/record[219][7]_i_1_n_0                                  |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[218][7]_i_2_n_0                                  | main/record[218][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[21][7]_i_2_n_0                                   | main/record[21][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[220][7]_i_2_n_0                                  | main/record[220][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[224][7]_i_2_n_0                                  | main/record[224][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[222][7]_i_2_n_0                                  | main/record[222][7]_i_1_n_0                                  |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[223][7]_i_2_n_0                                  | main/record[223][7]_i_1_n_0                                  |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[22][7]_i_2_n_0                                   | main/record[22][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[23][7]_i_2_n_0                                   | main/record[23][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[25][7]_i_2_n_0                                   | main/record[25][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[24][7]_i_2_n_0                                   | main/record[24][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[33][7]_i_2_n_0                                   | main/record[33][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[45][7]_i_2_n_0                                   | main/record[45][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[27][7]_i_2_n_0                                   | main/record[27][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[47][7]_i_2_n_0                                   | main/record[47][7]_i_1_n_0                                   |                6 |             16 |
+|  clk_IBUF_BUFG                             | main/record[48][7]_i_2_n_0                                   | main/record[48][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[36][7]_i_2_n_0                                   | main/record[36][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[29][7]_i_2_n_0                                   | main/record[29][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[28][7]_i_2_n_0                                   | main/record[28][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[35][7]_i_2_n_0                                   | main/record[35][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[46][7]_i_2_n_0                                   | main/record[46][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[49][7]_i_2_n_0                                   | main/record[49][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[2][7]_i_2_n_0                                    | main/record[2][7]_i_1_n_0                                    |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[31][7]_i_2_n_0                                   | main/record[31][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[34][7]_i_2_n_0                                   | main/record[34][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[26][7]_i_2_n_0                                   | main/record[26][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[39][7]_i_2_n_0                                   | main/record[39][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[40][7]_i_2_n_0                                   | main/record[40][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[32][7]_i_2_n_0                                   | main/record[32][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[30][7]_i_2_n_0                                   | main/record[30][7]_i_1_n_0                                   |                7 |             16 |
+|  clk_IBUF_BUFG                             | main/record[42][7]_i_2_n_0                                   | main/record[42][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[38][7]_i_2_n_0                                   | main/record[38][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[44][7]_i_2_n_0                                   | main/record[44][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[37][7]_i_2_n_0                                   | main/record[37][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[3][7]_i_2_n_0                                    | main/record[3][7]_i_1_n_0                                    |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[41][7]_i_2_n_0                                   | main/record[41][7]_i_1_n_0                                   |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[43][7]_i_2_n_0                                   | main/record[43][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[62][7]_i_2_n_0                                   | main/record[62][7]_i_1_n_0                                   |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[52][7]_i_2_n_0                                   | main/record[52][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[63][7]_i_2_n_0                                   | main/record[63][7]_i_1_n_0                                   |                3 |             16 |
+|  clk_IBUF_BUFG                             | main/record[64][7]_i_2_n_0                                   | main/record[64][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[65][7]_i_2_n_0                                   | main/record[65][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[50][7]_i_2_n_0                                   | main/record[50][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[67][7]_i_2_n_0                                   | main/record[67][7]_i_1_n_0                                   |                1 |             16 |
+|  clk_IBUF_BUFG                             | main/record[68][7]_i_2_n_0                                   | main/record[68][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[61][7]_i_2_n_0                                   | main/record[61][7]_i_1_n_0                                   |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[69][7]_i_2_n_0                                   | main/record[69][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[5][7]_i_2_n_0                                    | main/record[5][7]_i_1_n_0                                    |                4 |             16 |
+|  clk_IBUF_BUFG                             | main/record[4][7]_i_2_n_0                                    | main/record[4][7]_i_1_n_0                                    |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[66][7]_i_2_n_0                                   | main/record[66][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[60][7]_i_2_n_0                                   | main/record[60][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[54][7]_i_2_n_0                                   | main/record[54][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[55][7]_i_2_n_0                                   | main/record[55][7]_i_1_n_0                                   |                6 |             16 |
+|  clk_IBUF_BUFG                             | main/record[56][7]_i_2_n_0                                   | main/record[56][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[58][7]_i_2_n_0                                   | main/record[58][7]_i_1_n_0                                   |                6 |             16 |
+|  clk_IBUF_BUFG                             | main/record[51][7]_i_2_n_0                                   | main/record[51][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[59][7]_i_2_n_0                                   | main/record[59][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[57][7]_i_2_n_0                                   | main/record[57][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[53][7]_i_2_n_0                                   | main/record[53][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[81][7]_i_2_n_0                                   | main/record[81][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[75][7]_i_2_n_0                                   | main/record[75][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[76][7]_i_2_n_0                                   | main/record[76][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[7][7]_i_2_n_0                                    | main/record[7][7]_i_1_n_0                                    |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[77][7]_i_2_n_0                                   | main/record[77][7]_i_1_n_0                                   |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[79][7]_i_2_n_0                                   | main/record[79][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[8][7]_i_2_n_0                                    | main/record[8][7]_i_1_n_0                                    |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[91][7]_i_2_n_0                                   | main/record[91][7]_i_1_n_0                                   |                5 |             16 |
+|  clk_IBUF_BUFG                             | main/record[84][7]_i_2_n_0                                   | main/record[84][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[92][7]_i_2_n_0                                   | main/record[92][7]_i_1_n_0                                   |                2 |             16 |
+|  clk_IBUF_BUFG                             | main/record[93][7]_i_2_n_0                                   | main/record[93][7]_i_1_n_0                                   |                2 |             16 |
+|  vga/rgb_reg                               |                                                              | reset_IBUF                                                   |                9 |             20 |
+|  vga/rgb_reg                               | vga/v_count_next                                             | reset_IBUF                                                   |                5 |             20 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                              |                2 |             20 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             22 |
+|  clk_IBUF_BUFG                             | vga/E[0]                                                     |                                                              |                4 |             22 |
+|  clk_IBUF_BUFG                             | vga/bit_addr_reg[0]_1[0]                                     |                                                              |                4 |             22 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/x_new_reg_n_0                                  |                                                              |                4 |             24 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/y_new_reg_n_0                                  |                                                              |                4 |             24 |
+|  clk_IBUF_BUFG                             | vga/rgb_reg                                                  |                                                              |                6 |             24 |
+|  clk_IBUF_BUFG                             | ca/unit_mouse/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | ca/unit_mouse/Inst_Ps2Interface/clear                        |                4 |             28 |
+|  clk_IBUF_BUFG                             |                                                              | vga/cursor_y_reg[9]                                          |               15 |             40 |
+|  clk_IBUF_BUFG                             |                                                              | ca/unit_mouse/reset_timeout_cnt_reg_n_0                      |                7 |             48 |
+|  clk_IBUF_BUFG                             |                                                              | reset_IBUF                                                   |               16 |             48 |
+|  clk_IBUF_BUFG                             |                                                              | ca/unit_mouse/reset_periodic_check_cnt__0                    |                6 |             52 |
+|  clk_IBUF_BUFG                             | main/counter_1s_reg[1]_0                                     | main/counter_1s[31]_i_1_n_0                                  |                8 |             62 |
+|  clk_IBUF_BUFG                             |                                                              | dt/clock_0d67hz/clear                                        |                8 |             64 |
+|  clk_IBUF_BUFG                             |                                                              | main/clk_divider_0p5/count[0]_i_1_n_0                        |                8 |             64 |
+|  clk_IBUF_BUFG                             | main/counter_1p5s0                                           | main/counter_1p5s[31]_i_1_n_0                                |                8 |             64 |
+|  clk_IBUF_BUFG                             | main/success_counter[31]_i_1_n_0                             | main/position_overall[14][14]_i_1_n_0                        |                8 |             64 |
+|  clk_IBUF_BUFG                             | main/step_to_replay_reg[7]_i_2_n_0                           | main/step_to_replay[7]_i_1_n_0                               |                9 |             64 |
+|  clk_IBUF_BUFG                             | main/counter_1s_reg[1]_0                                     |                                                              |               22 |            112 |
+|  clk_IBUF_BUFG                             |                                                              | main/position_overall[14][14]_i_1_n_0                        |               94 |            450 |
+|  clk_IBUF_BUFG                             | main/position_black2_out                                     | main/position_black[14][14]_i_1__1_n_0                       |              124 |            450 |
+|  clk_IBUF_BUFG                             | main/position_white1_out                                     | main/position_overall[14][14]_i_1_n_0                        |              120 |            450 |
+|  clk_IBUF_BUFG                             |                                                              | main/position_white_reg[14][14]_0                            |              239 |            900 |
+|  clk_IBUF_BUFG                             |                                                              |                                                              |              537 |           1686 |
++--------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+
+
